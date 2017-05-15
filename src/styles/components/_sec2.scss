@@ -1,0 +1,138 @@
+.sec2 {
+    background-color: white;
+    overflow: hidden;
+    margin-top: -30px;
+    padding-top: 120px;
+    z-index: 1;
+
+    @include media(w1024) {
+        padding-top: 100px;
+    }
+
+    @include media(w768) {
+        padding-top: 80px;
+    }
+
+    &__top {
+        background-image: linear-gradient(to top, #dedfde, white);
+        
+
+        @include media(w1024) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &__text-container {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        @include media(w1024) {
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__text {
+        padding-right: 40%;
+
+        @include media(w1024) {
+            padding-right: 0;
+        }
+    }
+
+    &__note {
+        background-color: white;
+        padding: 50px calc(40% - 30px) 50px 68px;
+        position: relative;
+        z-index: 2;
+
+        &:before {
+            content: "";
+            background-image: url("../img/sec2-shadow.png");
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 40px;
+            width: 100%;
+
+            @include media(w768) {
+                content: none;
+            }
+        }
+
+        @include media(w768) {
+            box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+            margin-left: -18px;
+            margin-right: -18px;
+            padding: 30px 30% 50px 20px;
+            z-index: auto;
+        }
+
+        @include media(w768) {
+            text-align: center;
+            margin-bottom: 300px;
+            padding: 30px 18px 100px;
+        }
+    }
+
+    &__note-img {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        max-height: 650px;
+
+        @include media(w1024) {
+            bottom: -60px;
+            right: -60px;
+            max-height: 450px;
+        }
+
+        @include media(w768) {
+            transform: translateX(50%);
+            right: 50%;
+            bottom: -400px
+        }
+    }
+
+    &__bottom {
+        background-image: linear-gradient(to right, $main-red, #f89732 66%, #f79a21 100%);
+        margin-top: -200px;
+        padding-top: 280px;
+        position: relative;
+
+        &:before {
+            content: "";
+            background-image: url("../img/sec2-border.png");
+            position: absolute;
+            top: -12px;
+            height: 12px;
+            width: 100%;
+
+            @include media(w768) {
+                content: none;
+            }
+        }
+
+        @include media(w1024) {
+            margin-top: 0;
+            padding-top: 50px;
+        }
+    }
+
+    &__bottom-img {
+        position: absolute;
+        bottom: calc(100% - 6px);
+
+        &_left {
+            left: 1%;
+        }
+
+        &_right {
+            right: 1%;
+        }
+    }
+}

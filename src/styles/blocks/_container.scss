@@ -1,0 +1,13 @@
+.container {
+	margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px; 
+    position: relative;
+    max-width: 1180px;
+
+    @include media(w1024) {
+        padding-left: 18px;
+        padding-right: 18px; 
+    }
+}

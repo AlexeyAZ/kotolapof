@@ -1,0 +1,66 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0.5em;
+}
+
+.text {
+
+    &_xs {
+        font-size: 20px;
+
+        @include media(w1024) {
+            
+        }
+    }
+
+    &_s {
+        font-size: 30px;
+    }
+
+    &_m {
+        font-size: 33px;
+    }
+    
+    &_l {
+        font-size: 41px;
+    }
+    
+    &_xl {
+        font-size: 40px;
+    }
+    
+    &_xxl {
+        font-size: 47px;
+    }
+
+    
+    &_x {
+        font-size: 60px;
+    }
+}
+
+h2 {
+    font-family: 'Appetite', Arial, Helvetica, sans-serif;
+    font-size: 66px;
+
+    @include media(w1024) {
+        font-size: 50px;
+    }
+
+    @include media(w768) {
+        font-size: 33px;
+    }
+}
+
+h3 {
+    font-family: 'Galpon', Arial, Helvetica, sans-serif;
+    font-size: 58px;
+    font-weight: 900;
+
+    @include media(w1024) {
+        font-size: 50px;
+    }
+
+    @include media(w768) {
+        font-size: 37px;
+    }
+}

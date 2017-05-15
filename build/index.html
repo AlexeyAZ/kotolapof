@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Main</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-phone" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 — 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 — 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 — 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 — 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 — 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 — 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+        </form>
+      </div>
+    </div>
+    <section class="sec sec1">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__item header__item_logo"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
+          <div class="header__item header__item_description">
+            <p class="text mb0 color-white">Франшиза комплексного<br> ЗооЦентра</p>
+          </div>
+          <div class="header__item header__item_contacts"><a class="header__link phone phone_white" href="tel:88006005030" data-phone="88006005030">8 800 600 50 30</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
+        </div>
+      </header>
+      <div class="container ta-center">
+        <div class="sec1__title-wrap mb2"><img class="sec1__decor sec1__decor_left" src="img/sec1-decor.png" alt=""><img class="sec1__decor sec1__decor_right" src="img/sec1-decor.png" alt="">
+          <h2 class="color-white mb0">Бизнес для тех, кто хочет открыть ЗооЦентр с доходом от 1,2 млн рублей за 45 дней</h2>
+        </div>
+        <p class="text text_l bold euro color-white mb2 sec1__subtitle">Начните зарабатывать от 80 000 рублей в месяц на услугах и продаже товаров для домашних животных</p>
+        <div class="sec1__note">
+          <div class="sec1__note-decor"><img class="sec1__note-decor-img" src="img/sec1-icon.png" alt="">
+            <div class="sec1__note-decor-wrap">
+              <div class="sec1__note-decor-container">
+                <div class="sec1__note-decor-circle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sec1__note-bg">
+            <p class="mb1">Скачайте презентацию и финансовую таблицу франшизы<br> и узнайте ответы на все вопросы:</p>
+            <button class="btn-round btn-round_download js-small-btn">Скачать презентацию</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec2">
+      <div class="sec2__top">
+        <div class="container">
+          <div class="sec2__text-container">
+            <h3 class="mb1">Мировой объём рынка товаров для домашних питомцев в 2015 году составил более 27 млрд долларов</h3>
+            <div class="sec2__text">
+              <p class="mb2">Более половины жителей России содержат как минимум одного питомца. И не экономят на их содержании даже в кризис</p>
+              <p class="mb2">Домашние животные обходятся хозяевам в среднем в 4,5 тысячи рублей в месяц и десятки часов личного времени. Ездить на груминг в один конец города, а за кормом в другой — не удобно</p>
+            </div>
+          </div>
+          <div class="sec2__note">
+            <p class="mb2">Мы открыли ЗооЦентр «Котолапофф», в котором можно получить все и сразу — купить всё необходимое, воспользоваться услугами ветеринара и грумера</p>
+            <button class="btn-round js-small-btn">Узнать подробнее</button><img class="sec2__note-img" src="img/sec2-img.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="sec2__bottom"><img class="sec2__bottom-img sec2__bottom-img_left" src="img/sec2-img-left.png" alt=""><img class="sec2__bottom-img sec2__bottom-img_right" src="img/sec2-img-right.png" alt="">
+        <div class="container">
+          <h3 class="color-white ta-center">Сегодня жители города выбирают нас за то, что могут найти все для своего питомца в одном месте</h3>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec3">
+      <div class="container"></div>
+    </section>
+    <section class="sec sec4">
+      <div class="container"></div>
+    </section>
+    <section class="sec sec5">
+      <div class="container"></div>
+    </section>
+    <section class="sec sec6">
+      <div class="container"></div>
+    </section>
+    <section class="sec sec7">
+      <div class="container">
+        <div class="bottom-form-container" id="bottomFormContainer">
+          <form class="bottom-form" data-next="#bigForm" id="bottomForm">
+            <label class="bottom-form__label">
+              <input class="input input_city" type="text" name="city" placeholder="Ваш город" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input input_phone" type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input" type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <button class="btn-round bottom-form__btn">Проверить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block footer__block_social">
+          <p class="footer__text footer__text_copy">© 2017, «Уномоменто»</p>
+          <div class="footer__social">
+            <p class="footer__text footer__text_social-title">Мы в соц. сетях</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-vk"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block footer__block_contacts">
+          <p class="footer__text footer__text_adress">Наш офис: Пермь, ул. Шоссе Космонавтов, 111, корпус 2</p>
+          <div class="footer__contacts"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+            <p class="footer__text">e-mail:<a class="footer__link" href="mailto:uno@uno-perm.ru">uno@uno-perm.ru</a></p>
+          </div>
+        </div>
+        <div class="footer__block footer__block_feedback"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn">Заказать звонок</a></div>
+      </div>
+    </footer>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js")-->
+  </body>
+</html>

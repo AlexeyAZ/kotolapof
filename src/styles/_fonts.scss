@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'Galpon';
+	src: url('../fonts/Galpon/Galpon-Black.eot');
+	src: url('../fonts/Galpon/Galpon-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Galpon/Galpon-Black.woff') format('woff'),
+		url('../fonts/Galpon/Galpon-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Appetite';
+	src: url('../fonts/Appetite/AppetiteNew.eot');
+	src: url('../fonts/Appetite/AppetiteNew.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Appetite/AppetiteNew.woff2') format('woff2'),
+		url('../fonts/Appetite/AppetiteNew.woff') format('woff'),
+		url('../fonts/Appetite/AppetiteNew.ttf') format('truetype'),
+		url('../fonts/Appetite/AppetiteNew.svg#AppetiteNew') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFSquareSansPro';
+	src: url('../fonts/PFSquareSansPro/PFSquareSansPro-Regular.eot');
+	src: url('../fonts/PFSquareSansPro/PFSquareSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Regular.woff2') format('woff2'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Regular.woff') format('woff'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Regular.ttf') format('truetype'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PFSquareSansPro';
+	src: url('../fonts/PFSquareSansPro/PFSquareSansPro-Bold.eot');
+	src: url('../fonts/PFSquareSansPro/PFSquareSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Bold.woff2') format('woff2'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Bold.woff') format('woff'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Bold.ttf') format('truetype'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Bold.svg#PFSquareSansPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PFSquareSansPro';
+	src: url('../fonts/PFSquareSansPro/PFSquareSansPro-Light.eot');
+	src: url('../fonts/PFSquareSansPro/PFSquareSansPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Light.woff2') format('woff2'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Light.woff') format('woff'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Light.ttf') format('truetype'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Light.svg#PFSquareSansPro-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PFSquareSansPro';
+	src: url('../fonts/PFSquareSansPro/PFSquareSansPro-Medium.eot');
+	src: url('../fonts/PFSquareSansPro/PFSquareSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Medium.woff2') format('woff2'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Medium.woff') format('woff'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Medium.ttf') format('truetype'),
+		url('../fonts/PFSquareSansPro/PFSquareSansPro-Medium.svg#PFSquareSansPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'eurofurence';
+	src: url('../fonts/Eurofurence/Eurofurencebold.eot');
+	src: url('../fonts/Eurofurence/Eurofurencebold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eurofurence/Eurofurencebold.woff2') format('woff2'),
+		url('../fonts/Eurofurence/Eurofurencebold.woff') format('woff'),
+		url('../fonts/Eurofurence/Eurofurencebold.ttf') format('truetype'),
+		url('../fonts/Eurofurence/Eurofurencebold.svg#Eurofurencebold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'eurofurence';
+	src: url('../fonts/Eurofurence/Eurofurenceregular.eot');
+	src: url('../fonts/Eurofurence/Eurofurenceregular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eurofurence/Eurofurenceregular.woff2') format('woff2'),
+		url('../fonts/Eurofurence/Eurofurenceregular.woff') format('woff'),
+		url('../fonts/Eurofurence/Eurofurenceregular.ttf') format('truetype'),
+		url('../fonts/Eurofurence/Eurofurenceregular.svg#Eurofurenceregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
