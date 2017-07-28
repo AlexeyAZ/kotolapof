@@ -1,20 +1,25 @@
 extends templates/layout
 
 block vars
-    - var title = 'Main'
+    - var title = 'Котолапофф'
 
 block content
     section.sec.thanks
         include components/header
-        div.container
-            p.thanks__heading.
-                <span id="thanksName"></span>наши</span> менеджеры уже занимаются вашей заявкой
-            p.thanks__title.
+        div.container.ta-center.color-white
+            div.sec1__title-wrap.mb2
+                img(src="img/sec1-decor.png", alt="").sec1__decor.sec1__decor_left
+                img(src="img/sec1-decor.png", alt="").sec1__decor.sec1__decor_right
+                h2.mb0.
+                    <span id="thanksName"></span> менеджеры уже занимаются вашей заявкой
+            p.thanks__title.text.text_l.
                 Мы свяжемся с Вами в ближайшее время
-            div.thanks__buttons
-                a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_download.
-                    Открыть презентацию
-                a(href="/index.html").thanks__links-link.
-                    Вернуться на сайт
-            p.thanks__subtitle.
-                График работы с 9.00 до 23.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день
+            div.thanks__border
+                img(src="img/sec1-icon.png", alt="").thanks__border-img
+                div.thanks__buttons
+                    a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_white.mb1.
+                        Скачать презентацию
+                    a(href="/index.html").thanks__buttons-link.mb1.
+                        Вернуться на сайт
+                p.thanks__subtitle.medium.
+                    График работы с 9:00 до 18:00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день

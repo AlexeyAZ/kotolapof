@@ -1,39 +1,38 @@
 .thanks {
     background-image: url("../img/sec1-bg.jpg");
     padding-top: 30px;
-    padding-bottom: 160px;
+    padding-bottom: 50px;
 
     @include media(w1024) {
-        padding-bottom: 200px;
+        //padding-bottom: 200px;
     }
 
     &__heading {
         border-bottom: 2px solid white;
-        font-family: 'Qanelas', sans-serif;
-        font-weight: 800;
-        font-size: 75px;
         padding-bottom: 0.4em;
-
-        @include media(w1024) {
-            font-size: 50px;
-        }
-
-        @include media(w768) {
-            font-size: 40px;
-        }
     }
 
     &__title {
-        font-size: 58px;
-        margin-bottom: 1em;
+        font-family: 'eurofurence';
+        font-weight: bold;
+        margin-bottom: 80px;
+    }
 
-        @include media(w1024) {
-            font-size: 40px;
-        }
+    &__border {
+        border: 4px solid white;
+        padding: 100px 60px 30px;
+        position: relative;
 
         @include media(w768) {
-            font-size: 30px;
+            padding: 100px 20px 30px;
         }
+    }
+
+    &__border-img {
+        transform: translate(-50%, calc(-50% - 2px));
+        position: absolute;
+        left: 50%;
+        top: 0;
     }
 
     &__subtitle {
@@ -53,6 +52,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         margin: 0 auto 30px;
         width: 100%;
 
@@ -64,7 +64,6 @@
     &__buttons-link {
         color: white;
         font-size: 30px;
-        margin-left: 60px;
 
         @include media(w768) {
             font-size: 20px;

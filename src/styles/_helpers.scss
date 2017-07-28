@@ -14,6 +14,10 @@
     font-family: 'eurofurence';
 }
 
+.medium {
+    font-weight: 500;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -28,4 +32,12 @@
 
 .mb2 {
     margin-bottom: 2em;
+}
+
+.mb3 {
+    margin-bottom: 3em;
+}
+
+.border {
+    border-bottom: 2px solid currentColor;
 }

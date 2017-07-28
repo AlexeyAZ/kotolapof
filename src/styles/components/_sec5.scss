@@ -1,3 +1,14 @@
 .sec5 {
-    
+    background-image: url("../img/sec5-bg.jpg");
+    padding-top: 80px;
+
+    @include media (w1024) {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    @include media (w768) {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
 }

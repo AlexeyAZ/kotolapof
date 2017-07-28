@@ -21,6 +21,14 @@
     &__block {
         display: flex;
 
+        &_copyright {
+
+            @include media(w768) {
+                order: 1;
+                justify-content: center;
+            }
+        }
+
         &_social {
             flex-direction: column;
             
@@ -28,41 +36,49 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                order: 3;
-                margin-top: 30px;
-                width: 100%;
+                //width: 100%;
             }
 
             @include media(w768) {
                 flex-direction: column;
                 margin-top: 0;
+                order: 4;
             }
         }
 
         &_contacts {
-            flex-direction: column;
 
             @include media(w1024) {
-                order: 1;
+                width: 100%;
+                order: 10;
             }
 
             @include media(w768) {
-                align-items: center;
-                order: 2;
+                justify-content: center;
+                text-align: center;
+                order: 3;
+            }
+
+            br {
+                
+                @include media(w1024) {
+                    display: none;
+                }
             }
         }
 
         &_feedback {
-            flex-direction: column;
-            align-items: flex-end;
+            //flex-direction: column;
+            align-items: center;
 
             @include media(w1024) {
-                order: 2;
+                flex-direction: column;
+                align-items: flex-end;
             }
 
             @include media(w768) {
                 align-items: center;
-                order: 1;
+                order: 2;
             }
         }
 
@@ -81,7 +97,7 @@
         }
 
         &_social-title {
-            margin-right: 10px;
+            
         }
 
         &_adress {
@@ -98,22 +114,26 @@
     }
 
     &__social {
-        display: flex;
+        //display: flex;
         align-items: center;
         white-space: nowrap;
     }
 
     &__social-list {
         display: flex;
+
+        @include media(w768) {
+            justify-content: center;
+        }
     }
 
     &__social-item {
-        background-color: #9a9a9a;
+        //background-color: #9a9a9a;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 14px;
+        font-size: 20px;
         margin-right: 4px;
         height: 24px;
         width: 24px;
@@ -128,19 +148,20 @@
 
         &:hover {
             border-color: currentColor;
+            color: white;
         }
 
         &_social {
             border: none;
-            color: white;
+            //color: white;
         }
 
         &_politic {
-            border-bottom: 1px solid currentColor;
-            margin-left: 30px;
+            //border-bottom: 1px solid currentColor;
+            //margin-left: 30px;
 
             @include media(w1024) {
-                margin-left: 10px;
+                //margin-left: 10px;
             }
 
             @include media(w768) {
@@ -173,5 +194,14 @@
         color: $footer-text;
         line-height: 1;
         text-decoration: none;
+        margin-right: 30px;
+
+        &:hover {
+            color: white;
+        }
+
+        @include media(w1024) {
+            margin-right: 0;
+        }
     }
 }

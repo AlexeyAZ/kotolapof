@@ -1,3 +1,26 @@
 .sec3 {
-    
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+
+    @include media(w1024) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @include media(w768) {
+        padding-top: 30px;
+    }
+
+    span {
+        border-bottom: 2px solid currentColor;
+        white-space: nowrap;
+    }
+
+    &__icon {
+        transform: translate(-50%, 50%);
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+    }
 }

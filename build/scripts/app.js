@@ -63,21 +63,19 @@ $(function () {
 
                 if (res.status == 200) {
                     $(".form-wrap_open").removeClass("form-wrap_open");
+                    $(".form-wrap_big").addClass("form-wrap_open");
+                    $("html").addClass("form-open");
 
                     var selfName = $form.find("input[name=name]");
-                    var selfPhone = $form.find("input[name=phone]");
-                    var selfEmail = $form.find("input[name=email]");
                     var formData = $form.serialize();
-                    console.log(formData);
-
-                    $("[name=name1]").val(selfName.val());
-                    $("[name=phone1]").val(selfPhone.val());
-                    $("[name=email1]").val(selfEmail.val());
-
-                    $("html").addClass("form-open");
-                    $(".form-wrap_big").addClass("form-wrap_open");
 
                     name = selfName.val();
+
+                    $.ajax({
+                        type: "POST",
+                        url: "php/sendwe.php",
+                        data: formData
+                    });
 
                     if (name) {
                         localStorage.setItem("landclientname", name + ", наши");
@@ -95,13 +93,16 @@ $(function () {
         $("#smallForm, #bottomForm").submit(function (e) {
             e.preventDefault();
             $(".form-wrap_open").removeClass("form-wrap_open");
+            $(".form-wrap_big").addClass("form-wrap_open");
+            $("html").addClass("form-open");
 
             var self = $(this);
             var selfName = self.find("input[name=name]");
             var selfPhone = self.find("input[name=phone]");
             var selfEmail = self.find("input[name=email]");
             var formData = self.serialize();
-            console.log(formData);
+
+            name = selfName.val();
 
             $("[name=name1]").val(selfName.val());
             $("[name=phone1]").val(selfPhone.val());
@@ -110,19 +111,12 @@ $(function () {
             $.when($.ajax({
                 type: "POST",
                 url: "php/send.php",
-                data: formData,
-                success: function (data) {}
+                data: formData
             }), $.ajax({
                 type: "POST",
                 url: "php/sendwe.php",
-                data: formData,
-                success: function (data) {}
+                data: formData
             }));
-
-            $("html").addClass("form-open");
-            $(".form-wrap_big").addClass("form-wrap_open");
-
-            name = selfName.val();
 
             if (name) {
                 localStorage.setItem("landclientname", name + ", наши");

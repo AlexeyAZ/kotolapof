@@ -37,6 +37,9 @@ $form-input-padding: 25px;
 }
 .form-container {
     background-color: white;
+    background-image: url("../img/popup-decor.png");
+    background-repeat: no-repeat;
+    background-position: left -40px bottom -20px;
     display: inline-block;
     text-align: left;
     opacity: 0;
@@ -85,8 +88,9 @@ $form-input-padding: 25px;
     }
 
     &__heading {
+        font-family: "Galpon";
         font-size: 42px;
-        font-weight: bold;
+        font-weight: 900;
         margin-bottom: 20px;
 
         @media screen and (max-width:768px) {
@@ -140,6 +144,7 @@ $form-input-padding: 25px;
     &__btn {
         position: relative;
         font-size: 22px;
+        max-height: 64px;
 
         &_center {
             display: block;

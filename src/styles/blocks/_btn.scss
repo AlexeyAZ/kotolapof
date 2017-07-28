@@ -12,6 +12,10 @@ a {
     &.btn-round {
         display: inline-flex;
         align-items: center;
+
+        @include media (w768) {
+            justify-content: center;
+        }
     }
 }
 
@@ -53,19 +57,21 @@ a {
     }
 
     @include media (w768) {
-        border-radius: 30px;
-        font-size: 20px;
+        border-radius: calc(#{$btn-height-mobile} / 2);;
+        font-size: 28px;
         padding: 0 10px;
-        height: 60px;
+        height: $btn-height-mobile;
         width: 100%;
     }
 
     &_white {
         background-color: white;
+        background-image: none;
         color: black;
 
         &:hover {
-            animation: btnAnimWhite 0.8s 0s ease-out 1;
+            //animation: btnAnimWhite 0.8s 0s ease-out 1;
+            color: white;
         }
     }
 
